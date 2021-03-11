@@ -1,0 +1,93 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: #ecf0f1;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #34495e;
+}
+
+.parentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.childDiv {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3498db;
+    box-shadow: 1px 2px 6px 4px #3498db7d;
+    background: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    /* animation-name: sample-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: sample-animation 2s ease infinite alternate;
+}
+
+.portLink {
+    padding: 11px 49px;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 29px;
+    border-radius: 61px;
+    transition: 0.5s;
+}
+
+.portLink:hover {
+    color: tomato;
+    border: 2px solid tomato;
+    background: none;
+    transition: 0.5s all;
+}
+
+@keyframes sample-animation {
+    0% {
+        border-radius: 0%;
+    }
+
+    50% {
+        border-radius: 100%;
+        background: tomato;
+        width: 350px;
+        height: 350px;
+        border: 2px solid tomato;
+        box-shadow: 1px 2px 6px 4px rgba(255, 99, 71, 0.74);
+        background: tomato;
+        font-size: 50px;
+    }
+
+    100% {
+        border-radius: 100%;
+        background: #d35400;
+        width: 120px;
+        height: 120px;
+        border: 2px solid #d35400;
+        box-shadow: 1px 2px 6px 4px #d35400da;
+        background: #d35400;
+        font-size: 15px;
+    }
+
+}
